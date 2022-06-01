@@ -1,3 +1,6 @@
+body {
+    background: #9d9e9e;
+}
 #anima-div {
     background: url("./../imgs/ciclo-animacao.jpg");
     width: 250px;
@@ -5,7 +8,19 @@
     animation: anima-sprite 1s steps(8) infinite;   
 }
 
+#anima-link {
+    margin-top: 20px;
+    background: url("./../imgs/sprite-multi_1.png") 0px -531px;
+    width: 120px;
+    height: 120px;
+    animation: anima-link 1s steps(10) infinite;   
+}
+
 @keyframes anima-sprite {
     from { background-position: 0px; }
     to { background-position: -1920px;}
+}
+
+@keyframes anima-link {
+    100% { background-position-x: -1200px; }
 }
